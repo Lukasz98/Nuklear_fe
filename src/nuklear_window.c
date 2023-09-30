@@ -287,6 +287,7 @@ nk_begin_titled(struct nk_context *ctx, const char *name, const char *title,
     }
     win->layout = (struct nk_panel*)nk_create_panel(ctx);
     ctx->current = win;
+    assert(ctx->current != NULL);
     ret = nk_panel_begin(ctx, title, NK_PANEL_WINDOW);
     win->layout->offset_x = &win->scrollbar.x;
     win->layout->offset_y = &win->scrollbar.y;

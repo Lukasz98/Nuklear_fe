@@ -94,15 +94,15 @@ NK_GLOBAL const struct nk_color nk_yellow = {255,255,0,255};
     else (*(s)) = NK_WIDGET_STATE_INACTIVE;
 
 /* math */
-#ifndef NK_INV_SQRT
+//#ifndef NK_INV_SQRT
 NK_LIB float nk_inv_sqrt(float n);
-#endif
-#ifndef NK_SIN
+//#endif
+//#ifndef NK_SIN
 NK_LIB float nk_sin(float x);
-#endif
-#ifndef NK_COS
+//#endif
+//#ifndef NK_COS
 NK_LIB float nk_cos(float x);
-#endif
+//#endif
 NK_LIB nk_uint nk_round_up_pow2(nk_uint v);
 NK_LIB struct nk_rect nk_shrink_rect(struct nk_rect r, float amount);
 NK_LIB struct nk_rect nk_pad_rect(struct nk_rect r, struct nk_vec2 pad);
@@ -120,18 +120,18 @@ NK_LIB nk_bool nk_is_upper(int c);
 NK_LIB int nk_to_upper(int c);
 NK_LIB int nk_to_lower(int c);
 
-#ifndef NK_MEMCPY
+//#ifndef NK_MEMCPY
 NK_LIB void* nk_memcopy(void *dst, const void *src, nk_size n);
-#endif
-#ifndef NK_MEMSET
+//#endif
+//#ifndef NK_MEMSET
 NK_LIB void nk_memset(void *ptr, int c0, nk_size size);
-#endif
+//#endif
 NK_LIB void nk_zero(void *ptr, nk_size size);
 NK_LIB char *nk_itoa(char *s, long n);
 NK_LIB int nk_string_float_limit(char *string, int prec);
-#ifndef NK_DTOA
+//#ifndef NK_DTOA
 NK_LIB char *nk_dtoa(char *s, double n);
-#endif
+//#endif
 NK_LIB int nk_text_clamp(const struct nk_user_font *font, const char *text, int text_len, float space, int *glyphs, float *text_width, nk_rune *sep_list, int sep_count);
 NK_LIB struct nk_vec2 nk_text_calculate_text_bounds(const struct nk_user_font *font, const char *begin, int byte_len, float row_height, const char **remaining, struct nk_vec2 *out_offset, int *glyphs, int op);
 #ifdef NK_INCLUDE_STANDARD_VARARGS
