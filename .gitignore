@@ -10,3 +10,6 @@ doc/doc*
 *.swo
 *.swp
 /private/
+src/*.o
+src/*.d
+libnuklear.a
